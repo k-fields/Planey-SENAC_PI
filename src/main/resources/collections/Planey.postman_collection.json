@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "8470a477-f6a6-454f-bf6b-8d298e9d1377",
+		"_postman_id": "dbbcec19-f2f4-4db1-8d36-00269c251b8f",
 		"name": "Planey",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23052990"
 	},
 	"item": [
 		{
@@ -324,6 +325,62 @@
 							""
 						]
 					}
+				}
+			]
+		},
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "POST usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"carlos\",\r\n    \"password\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/planey/v1/salvar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"planey",
+								"v1",
+								"salvar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/planey/v1/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"planey",
+								"v1",
+								"listar"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
