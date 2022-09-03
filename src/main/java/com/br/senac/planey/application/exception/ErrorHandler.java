@@ -22,7 +22,7 @@ public class ErrorHandler {
     }
 
     @ExceptionHandler(value
-            = {RegistroNaoEncontrado.class})
+            = {RegistroNaoEncontradoException.class})
     protected ResponseEntity<Object> handleNotFoundException(RuntimeException ex) {
         ErrorResponse errorResponse = ErrorResponse.builder()
                 .mensagem(ex.getMessage())

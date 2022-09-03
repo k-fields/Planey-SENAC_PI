@@ -1,6 +1,5 @@
 package com.br.senac.planey.domain.service;
 
-import com.br.senac.planey.domain.dto.DespesaDto;
 import com.br.senac.planey.domain.dto.ReceitaDto;
 
 import java.util.List;

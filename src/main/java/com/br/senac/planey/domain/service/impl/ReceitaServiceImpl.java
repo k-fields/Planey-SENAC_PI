@@ -1,7 +1,7 @@
 package com.br.senac.planey.domain.service.impl;
 
 import com.br.senac.planey.application.exception.BusinessException;
-import com.br.senac.planey.application.exception.RegistroNaoEncontrado;
+import com.br.senac.planey.application.exception.RegistroNaoEncontradoException;
 import com.br.senac.planey.domain.dto.ReceitaDto;
 import com.br.senac.planey.domain.entity.Receita;
 import com.br.senac.planey.domain.service.ReceitaService;
@@ -28,7 +28,7 @@ public class ReceitaServiceImpl implements ReceitaService {
         List<Receita> listaDeReceitas = receitaRepository.findAll();
 
         if (listaDeReceitas.isEmpty())
-            throw new RegistroNaoEncontrado("Nenhuma receita encontrada.");
+            throw new RegistroNaoEncontradoException("Nenhuma receita encontrada.");
 
         return listaDeReceitas.stream().map(receita -> modelMapper.map(receita, ReceitaDto.class))
                 .collect(Collectors.toList());
