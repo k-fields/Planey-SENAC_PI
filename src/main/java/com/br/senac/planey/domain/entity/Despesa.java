@@ -1,12 +1,17 @@
 package com.br.senac.planey.domain.entity;
 
-import org.hibernate.annotations.Type;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "DESPESA")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Despesa {
 
     @Id
@@ -15,9 +20,8 @@ public class Despesa {
     private Long id;
 
     @Column(precision = 10, scale = 2, name = "VALOR")
-    private double valor;
+    private Double valor;
 
-    @Column(name = "DATA")
     private LocalDateTime data;
 
     @Column(name = "TAG")

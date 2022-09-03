@@ -1,12 +1,16 @@
 package com.br.senac.planey.domain.entity;
 
-import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Objects;
 
 @Entity
 @Table(name = "TAG")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Tag {
 
     @Id
@@ -16,38 +20,5 @@ public class Tag {
 
     @Column(name = "DESCRIPTION", nullable = false, length = 100)
     private String description;
-
-    @Deprecated
-    public Tag() {
-    }
-
-    private Tag(@NotNull String description) {
-        this.description = Objects.requireNonNull(description, "description must not be null");
-    }
-
-    public static Tag of(@NotNull String description) {
-        return new Tag(description);
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Tag tag = (Tag) o;
-        return Objects.equals(description, tag.description);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(description);
-    }
 
 }
