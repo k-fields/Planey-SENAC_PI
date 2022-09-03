@@ -1,6 +1,7 @@
 package com.br.senac.planey.domain.service.impl;
 
 import com.br.senac.planey.application.exception.BusinessException;
+import com.br.senac.planey.application.exception.RegistroNaoEncontrado;
 import com.br.senac.planey.domain.dto.DespesaDto;
 import com.br.senac.planey.domain.entity.Despesa;
 import com.br.senac.planey.domain.service.DespesaService;
@@ -27,7 +28,7 @@ public class DespesaServiceImpl implements DespesaService {
         List<Despesa> listaDeDespesas = despesaRepository.findAll();
 
         if (listaDeDespesas.isEmpty())
-            throw new BusinessException("Nenhuma despesa encontrada.");
+            throw new RegistroNaoEncontrado("Nenhuma despesa encontrada.");
 
         return listaDeDespesas.stream().map(despesa -> modelMapper.map(despesa, DespesaDto.class))
                 .collect(Collectors.toList());

@@ -22,6 +22,16 @@ public class ErrorHandler {
     }
 
     @ExceptionHandler(value
+            = {RegistroNaoEncontrado.class})
+    protected ResponseEntity<Object> handleNotFoundException(RuntimeException ex) {
+        ErrorResponse errorResponse = ErrorResponse.builder()
+                .mensagem(ex.getMessage())
+                .dtHrOcorrencia(LocalDateTime.now())
+                .build();
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(value
             = {Exception.class})
     protected ResponseEntity<Object> handleAllException(RuntimeException ex) {
         ErrorResponse errorResponse = ErrorResponse.builder()
