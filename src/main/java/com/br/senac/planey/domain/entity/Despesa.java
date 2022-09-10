@@ -26,4 +26,8 @@ public class Despesa {
 
     @Column(name = "TAG")
     private String tag;
+
+    @ManyToOne
+    @JoinColumn(referencedColumnName = "USERID")
+    private Usuario usuario;
 }

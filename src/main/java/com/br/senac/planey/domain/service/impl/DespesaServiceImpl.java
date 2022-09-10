@@ -24,8 +24,8 @@ public class DespesaServiceImpl implements DespesaService {
     }
 
     @Override
-    public List<DespesaDto> listarDespesas() {
-        List<Despesa> listaDeDespesas = despesaRepository.findAll();
+    public List<DespesaDto> listarDespesas(long userid) {
+        List<Despesa> listaDeDespesas = despesaRepository.findByUsuarioUserid(userid);
 
         if (listaDeDespesas.isEmpty())
             throw new RegistroNaoEncontradoException("Nenhuma despesa encontrada.");

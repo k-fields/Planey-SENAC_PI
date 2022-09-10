@@ -1,5 +1,6 @@
 package com.br.senac.planey.domain.dto;
 
+import com.br.senac.planey.domain.entity.Usuario;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,5 +18,6 @@ public class DespesaDto {
     private Double valor;
     private LocalDateTime data;
     private String tag;
+    private Usuario usuario;
 
 }

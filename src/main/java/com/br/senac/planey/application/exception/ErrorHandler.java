@@ -33,7 +33,7 @@ public class ErrorHandler {
 
     @ExceptionHandler(value
             = {Exception.class})
-    protected ResponseEntity<Object> handleAllException(RuntimeException ex) {
+    protected ResponseEntity<Object> handleAllException(Exception ex) {
         ErrorResponse errorResponse = ErrorResponse.builder()
                 .mensagem(ex.getMessage())
                 .dtHrOcorrencia(LocalDateTime.now())

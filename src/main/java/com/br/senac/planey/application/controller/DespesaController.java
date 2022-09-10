@@ -42,8 +42,8 @@ public class DespesaController {
                     content = {@Content(mediaType = "application/json",
                             schema = @Schema(implementation = ErrorResponse.class))})})
     @GetMapping("/despesa")
-    public List<DespesaDto> getDespesas() {
-        return despesaService.listarDespesas();
+    public List<DespesaDto> getDespesas(@RequestHeader("Authorization") String authorization, @RequestParam("user_id") long userid) {
+        return despesaService.listarDespesas(userid);
     }
 
     @ApiResponses(value = {

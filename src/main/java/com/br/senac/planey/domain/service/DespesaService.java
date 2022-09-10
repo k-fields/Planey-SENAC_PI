@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface DespesaService {
 
-    List<DespesaDto> listarDespesas();
+    List<DespesaDto> listarDespesas(long userid);
 
     DespesaDto listarDespesaPorId(long id);
 

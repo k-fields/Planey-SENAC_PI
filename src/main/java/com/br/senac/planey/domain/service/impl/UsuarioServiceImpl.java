@@ -36,7 +36,7 @@ public class UsuarioServiceImpl implements UsuarioService, UserDetailsService {
             throw new RegistroNaoEncontradoException("Usuário não encontrado.");
 
         return UsuarioDTO.builder()
-                .id(byUsername.getId())
+                .userid(byUsername.getUserid())
                 .username(byUsername.getUsername())
                 .password(byUsername.getPassword())
                 .build();

@@ -1,458 +1,468 @@
 {
-	"info": {
-		"_postman_id": "2b0bc198-ba67-4d40-97e9-45ba7b40b0e1",
-		"name": "Planey",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "despesa",
-			"item": [
-				{
-					"name": "POST despesa",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE2NjIzMDk0MTR9.AK1U_HEgSH0oAfASOSmlBRFRlmxs_D5mBvod2C-3whzruKgLlmo98j4KsbLzmVOOA1cyzqarO0egnn5PTFW54Q",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"valor\": 150.90,\r\n    \"data\": \"2022-08-28T14:34:58.8673497\",\r\n    \"tag\": \"COMPRAS\"\r\n}"
-						},
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/despesa",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"despesa"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "PUT despesa",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"valor\": 1070.88,\r\n    \"data\": \"2021-08-28T14:34:58.8673497\",\r\n    \"tag\": \"SAÚDE\"\r\n}"
-						},
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/despesa/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"despesa",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET despesa BY ID",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/despesa/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"despesa",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "DELETE despesa BY ID",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/despesa/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"despesa",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET ALL despesa",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE2NjIzMDk0MTR9.AK1U_HEgSH0oAfASOSmlBRFRlmxs_D5mBvod2C-3whzruKgLlmo98j4KsbLzmVOOA1cyzqarO0egnn5PTFW54Q",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/despesa",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"despesa"
-							],
-							"query": [
-								{
-									"key": "",
-									"value": null,
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "receita",
-			"item": [
-				{
-					"name": "POST receita",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"valor\": 150.90,\r\n    \"data\": \"2022-08-28T14:34:58.8673497\",\r\n    \"tag\": \"COMPRAS\"\r\n}"
-						},
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/receita",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"receita"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "PUT receita",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"valor\": 150.99,\r\n    \"data\": \"2022-08-28T14:34:58.8673497\",\r\n    \"tag\": \"COMPRAS\"\r\n}"
-						},
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/receita/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"receita",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET receita BY ID",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/receita/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"receita",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "DELETE receita BY ID",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Content-Type",
-								"type": "text",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/receita/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"receita",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET ALL receita",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/receita",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"receita"
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"exec": [
-							""
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "usuario",
-			"item": [
-				{
-					"name": "POST cadastrar usuario",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"username\":\"carlos\",\r\n    \"password\":\"123\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/usuario",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"usuario"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "POST login usuario",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"username\":\"carlos\",\r\n    \"password\":\"123\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/login",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"login"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET ALL usuario",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE2NjIzMDk0MTR9.AK1U_HEgSH0oAfASOSmlBRFRlmxs_D5mBvod2C-3whzruKgLlmo98j4KsbLzmVOOA1cyzqarO0egnn5PTFW54Q",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:8080/planey/v1/usuario",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"planey",
-								"v1",
-								"usuario"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
-			}
-		}
-	]
+  "info": {
+    "_postman_id": "2b0bc198-ba67-4d40-97e9-45ba7b40b0e1",
+    "name": "Planey",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "despesa",
+      "item": [
+        {
+          "name": "POST despesa",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE2NjI0MzIyNTR9.fZZIJzLGNg0_bihMuMIx5la0DtCL0laDKrS1RE1wQYtW21dWbp4y_meuNv5unCOGGUiCqp88s9d0sJzg_lkcnw",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"valor\": 1505.0,\r\n    \"data\": \"2022-08-28T14:34:58.8673497\",\r\n    \"tag\": \"COMPRAS\",\r\n    \"usuario\": {\r\n        \"userid\": 2\r\n    }\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/despesa",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "despesa"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT despesa",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"valor\": 1070.88,\r\n    \"data\": \"2021-08-28T14:34:58.8673497\",\r\n    \"tag\": \"SAÚDE\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/despesa/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "despesa",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET despesa BY ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/despesa/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "despesa",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE despesa BY ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/despesa/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "despesa",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL despesa",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE2NjI0MzIyNTR9.fZZIJzLGNg0_bihMuMIx5la0DtCL0laDKrS1RE1wQYtW21dWbp4y_meuNv5unCOGGUiCqp88s9d0sJzg_lkcnw",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/despesa?user_id=2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "despesa"
+              ],
+              "query": [
+                {
+                  "key": "user_id",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "receita",
+      "item": [
+        {
+          "name": "POST receita",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYXJsb3MiLCJleHAiOjE2NjI0MzE5MDR9.X0z93TruhsxisrzMy182ubpb6xaXorhh-XD_dikyVTmYjQiRHBysNgOatPq0E08qY4tGmh-bN6V0cj8C3Vw8AA",
+                "type": "text"
+              },
+              {
+                "key": "",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"valor\": 1505.0,\r\n    \"data\": \"2022-08-28T14:34:58.8673497\",\r\n    \"tag\": \"COMPRAS\",\r\n    \"usuario\": {\r\n        \"userid\": 1\r\n    }\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/receita",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "receita"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT receita",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"valor\": 150.99,\r\n    \"data\": \"2022-08-28T14:34:58.8673497\",\r\n    \"tag\": \"COMPRAS\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/receita/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "receita",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET receita BY ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/receita/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "receita",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE receita BY ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/receita/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "receita",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL receita",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/receita",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "receita"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "usuario",
+      "item": [
+        {
+          "name": "POST cadastrar usuario",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"carlos\",\r\n    \"password\":\"123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/usuario",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "usuario"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST login usuario",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"carlos\",\r\n    \"password\":\"123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET ALL usuario",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkZWxhaW5lIiwiZXhwIjoxNjYyMzE0NDM4fQ.OKHKCu9Ox-o_mppzpO_m48oel4x9Nb0oegn26UUz2NW1Swoq5GVgkNO34B0xa9aM5Q_lSCLbusltZozYFv8lsA",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/planey/v1/usuario",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "planey",
+                "v1",
+                "usuario"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@ import java.util.Collection;
 @NoArgsConstructor
 public class UsuarioDTO implements UserDetails {
 
-    private Long id;
+    private Long userid;
     private String username;
     private String password;
 
