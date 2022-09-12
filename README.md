@@ -19,3 +19,12 @@ Uma vez feita essa consulta, executar o serviço de login:
 > http://localhost:8080/login
 No retorno do /login será devolvido o token que deverá ser utilizado em todas as próximas consultas.
 
+### Integrantes do Grupo
+
+- `Caio Campos`
+- `Delaine Dos Santos Silva`
+- `Helio Akihiko Endo`
+- `Jose Carlos Dos Santos Neto`
+- `Rodrigo Santiago Dionizio`
+- `Vitoria Mendes Vasconcelos`
+- `William Ferreira Da Silva`
