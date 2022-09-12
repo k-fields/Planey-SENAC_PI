@@ -1,3 +1,6 @@
+# Verificar instalações e visualização
+ - Mais informações no arquivo PI_Grupo4-Especificações_SegundaEntrega.docx
+ 
 # Planey-SENAC_PI
 Projeto Integrador - Aplicação Web de Controle Financeiro Pessoal
 
